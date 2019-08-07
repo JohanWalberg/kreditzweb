@@ -31,37 +31,42 @@
   <!-- SCRIPT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="js/rellax.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 <body>
+
+
+
+  <div class="consumer_container">
     <!-- Navbar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!--Navigation-->	 
-      <header>
-        <nav>
-          <img class="logo_nav" src="images/logo_white_kreditz.png" alt="logo for kreditz">
-          <div class="menu">
-            <ul class="nav_ul">
-              <li> <a class="links_nav" href="index.html">For consumers</a> </li>
-              <li> <a class="links_nav" href="business.html">For business</a> </li>
-              <li> <a class="links_nav" href="about.html">About</a> </li>
-            </ul>
-          </div> 
-        </nav>
+<!--Navigation big screens-->	 
+    <!--Navigation Mobile-->
+    <nav>   
+    <header class="header">
+        <img class="logo_nav" src="images/logo_white_kreditz.png" alt="logo for kreditz">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li> <a class="links_nav" href="index.html">For consumers</a> </li>
+            <li> <a class="links_nav" href="business.html">For business</a> </li>
+            <li> <a class="links_nav" href="about.html">About</a> </li>
+        </ul>
       </header>
-    <!--Navigation-->
-
+    </nav>
+ 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="section hero">
-      <div class="one-half column phones" style="position: absolute; margin-left: 390px; margin-top: -270px;">
+  <div class="hero">
+      <div class="one-half column phones bg_images_banner" style="position: absolute; margin-left: 390px; margin-top: -270px;z-index: 11;">
           <img class="rellax" data-rellax-speed="-3" style="height: 200px;" src="images/guilloche.png">
       </div>
-        <div class="u-full-width" style="position: absolute; margin-top: -225px;">
+        <div class="u-full-width bg_images_banner" style="position: absolute; margin-top: -225px;z-index: 11;">
             <img class="rellax float_right" data-rellax-speed="-5" style="width: 400px;" src="images/halfgroup2.png">
         </div>
-    <div class="container nav_top_z_index color_white">
+    <div class="container nav_top_z_index color_white" style="z-index: 11;">
       <div class="row">
         <div data-aos="fade-up" class="one-half column mt-minus-top-60">
           <h4 class="hero-heading">Get a better credit score* in real-time with Kreditz – it’s free</h4>
@@ -75,7 +80,7 @@
           <a href="https://play.google.com/store/apps/details?id=com.kreditz.app"><img class="image-stores"  src="images/google.png"></a>
           <a href="https://itunes.apple.com/us/app/kreditz/id1406280309?ls=1&mt=8"><img class="image-stores"  src="images/apple.png"></a>
           </div>
-          <div class="" style="position: absolute;width: 100%;width: 100%; margin-left: 400px; margin-top: -200px;">
+          <div class="bg_images_banner" style="position: absolute;width: 100%;width: 100%; margin-left: 400px; margin-top: -200px;">
               <img class="rellax" data-rellax-speed="-1" style="width: 200px;" src="images/guillochemiddle.png">
           </div>
        </div>
@@ -85,10 +90,10 @@
         </div>
       </div>
     </div>
-    <div class="one-half column phones" style="position: absolute; margin-top: -100pt;">
+    <div class="one-half column phones bg_images_banner" style="position: absolute; margin-top: -100pt;z-index: 11;">
         <img class="rellax" data-rellax-speed="6" style="height: 300px;" src="images/guillochewater.png">
     </div>
-    <div class="u-full-width" style="position: absolute;margin-top: -150pt;">
+    <div class="u-full-width bg_images_banner" style="position: absolute;margin-top: -150pt;">
         <img class="rellax float_right" data-rellax-speed="-3" style="width: 300px;" src="images/halfwatermark.png">
     </div>
   </div>
@@ -234,6 +239,7 @@
       </div>
     </div>
   </div>
+</div>
   <script>
       // Start Rellax
       var rellax = new Rellax('.rellax', {
@@ -241,12 +247,6 @@
         }
       });
     </script>
-
-
-
-
-
-
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -268,16 +268,18 @@
     }
     </script>
 
+    <!-- SET TO ALWAYS HAVE BACKGROUND -->
     <script type="text/javascript">
     $(window).on("scroll", function() {
-        if($(window).scrollTop() > 525) {
-          $('nav').addClass('gradient');
+        if($(window).scrollTop() > 430) {
+          $('header').addClass('gradient');
         }
         else {
-          $('nav').removeClass('gradient');
+          $('header').removeClass('gradient');
         }
     })
     </script>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

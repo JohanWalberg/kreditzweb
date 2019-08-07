@@ -1,12 +1,20 @@
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-html { overflow-x: hidden; }
-
+html, body {
+  overflow-x:hidden; 
+} 
+.consumer_container {
+  overflow-x:hidden;
+  width: 100%;
+}
 .button {
     border-radius: 100px;
   }
   body {
     background-color: #fafafa;
+    widows: 100%;
+    
+    overflow-x: hidden;
   }
   .text-center {
     text-align: center;
@@ -37,29 +45,25 @@ html { overflow-x: hidden; }
   .mt-100 {
     margin-top: 100px;
   }
-  /* Navbar
+  /* Navbar Big screens
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   header {
     background-image: linear-gradient(to right,#7068fb,#6498fd,#53d3d4);
     background-size: cover;
     background-position: center;
   }
-  .nav_ul {
+  .bg_images_banner {
+    display: none;
+  }
+  /* .nav_ul {
     margin: 0;
     padding: 0;
   } 
 .links_nav {
   color: #fff;
 }
-.logo_nav {
-  height: 35px;
-  float: left;
-  margin: 16px 48px;
-}
-  /* .nav_ul > li {
-    margin: 0;
-    padding: 0;
-  } */
+
+
 
   nav {
     position: fixed;
@@ -69,6 +73,7 @@ html { overflow-x: hidden; }
   }
   nav ul {
     float: right;
+  
     margin: 0;
     padding-right: 42px;
   }
@@ -79,9 +84,163 @@ html { overflow-x: hidden; }
   nav.gradient {
     background-image: linear-gradient(to right,#7068fb,#6498fd,#53d3d4);
     opacity: 0.8;
+  } */
+  /* Navbar Mobile screens
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* MENU STYLES */
+  /* header */
+  .logo_nav {
+    height: 35px;
+    float: left;
+    margin: 16px 48px;
   }
+.header {
+  z-index: 9000;
+  /* background: transparent; */
+  background-image: linear-gradient(to right,#7068fb,#6498fd,#53d3d4);
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* .header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+} */
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+header.gradient {
+  background-image: linear-gradient(to right,#7068fb,#6498fd,#53d3d4);
+  opacity: 0.8;
+} 
+
+@media (max-width: 549px) { 
+  .hero-heading {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 900px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .bg_images_banner {
+    display: block;
+  }
+}
   /* Hero
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hero {
+    text-align: center;
+  }
   .phones {
     position: relative;
   }
@@ -164,7 +323,7 @@ html { overflow-x: hidden; }
     width: 100%;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 12px;
     transition: 0.4s;
     border-top: none;
     border-left: none;
@@ -380,4 +539,9 @@ html { overflow-x: hidden; }
     .image-stores {
       width: 150px;
   }
+  }
+
+  /* Mobile friendly */
+  @-ms-viewport{
+    width: device-width;
   }
