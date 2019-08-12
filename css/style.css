@@ -215,6 +215,9 @@ header.gradient {
   .hero-heading {
     margin-top: 120px;
   }
+  .margin-0{
+    margin: 0!important;
+  } 
 }
 
 @media (min-width: 900px) {
@@ -234,6 +237,10 @@ header.gradient {
   }
   .bg_images_banner {
     display: block;
+  }
+  .kreditz_score_share_image {
+    width: 300px!important;
+    height: auto!important;
   }
 }
   /* Hero
@@ -310,6 +317,29 @@ header.gradient {
   }
   .partners {
     color: #75839e;
+  }
+  /* Share your Kreditz score..!!
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .kreditz_score_share_container {
+    display: flex;
+    justify-content: center;
+  }
+  .kreditz_score_share_image {
+    width: 180px;
+    height: 350px;
+  }
+  .kreditz_score_1, .kreditz_score_2, .kreditz_score_3, .kreditz_score_4{
+    background: #fff;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .kreditz_score_2{
+  }
+  .kreditz_score_3{
+  }
+  .kreditz_score_4{
   }
   /* accordion (FAQ)
   –––––––––––––––––––––––––––––––––––––––––––––––––– */

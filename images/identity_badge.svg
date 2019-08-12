@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="39px" viewBox="0 0 37 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>identity-badge</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="identity-badge" transform="translate(0.000000, -2.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(0.000000, 0.992528)" fill="#1D3461">
+                <path d="M18.3302752,39.992528 C33.266055,35.6591947 39.240367,24.9769897 36.253211,7.94591321 C29.2831804,7.02460879 23.3088685,4.70681372 18.3302752,0.992528002 C13.6835882,4.2941153 7.87522936,6.61191037 0.905198777,7.94591321 C-2.4138634,24.9769897 3.39449541,35.6591947 18.3302752,39.992528 Z" id="Oval"></path>
+            </g>
+            <g id="AccountIcon" transform="translate(9.000000, 8.992528)" fill="#FFFFFF">
+                <path d="M0,21.992528 L0,20.4210994 C0,15.2138432 4.02943725,10.992528 9,10.992528 C13.9705627,10.992528 18,15.2138432 18,20.4210994 L18,21.992528 L0,21.992528 Z" id="Mask"></path>
+                <path d="M9,8.992528 C6.790861,8.992528 5,7.201667 5,4.992528 C5,2.783389 6.790861,0.992528002 9,0.992528002 C11.209139,0.992528002 13,2.783389 13,4.992528 C13,7.201667 11.209139,8.992528 9,8.992528 Z" id="Mask"></path>
+            </g>
+        </g>
+    </g>
+</svg>
